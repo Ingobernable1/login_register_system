@@ -1,0 +1,42 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login Module</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="body">
+
+<ul>
+    <li><a href="#about">Contact</a></li>
+    <li><a href="register.html">Register</a></li>
+    <li><a href="#news">About Us</a></li>
+    <li><a href="index.html">Login</a></li>
+</ul>
+
+
+<div class="div">
+
+    <form>
+        <input type="text" placeholder="Username" class="input" required><br/>
+
+        <div class="popup" onclick="myFunction()">
+            <input id="psInput" type="text" placeholder="Password" class="input" required><br/>
+            <span class="popuptext" id="myPopup">REGEX</span>
+        </div><br/>
+
+        <input type="submit" value="Log in" class="button buttonCorners"><br/>
+        <a href="forgot.html" class="label">Forgot Password?</a><br/>
+        <a href="register.html" class="label">Create Account?</a>
+
+    </form>
+
+</div>
+<script>
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+</script>
+</body>
+</html>
+
